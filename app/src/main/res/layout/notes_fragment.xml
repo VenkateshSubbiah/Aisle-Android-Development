@@ -74,7 +74,9 @@
                     android:layout_height="match_parent"
                     android:contentDescription="@string/picture"
                     android:scaleType="centerCrop" />
+
             </androidx.cardview.widget.CardView>
+
 
             <TextView
                 android:id="@+id/text_profile_name"
