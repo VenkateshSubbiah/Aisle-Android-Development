@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notes_nav"
+    app:startDestination="@id/fragment_notes">
+
+    <fragment
+        android:id="@+id/fragment_notes"
+        android:name="com.aisle.fragments.NotesFragment"
+        android:label="fragment_notes"
+        tools:layout="@layout/notes_fragment" />
+</navigation>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/discover_nav"
+    app:startDestination="@id/fragment_matches">
+
+    <fragment
+        android:id="@+id/fragment_matches"
+        android:name="com.aisle.fragments.MatchesFragment"
+        android:label="fragment_matches"
+        tools:layout="@layout/matches_fragment" />
+</navigation>

@@ -1,0 +1,4 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.LoginFlow" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
+</resources>
