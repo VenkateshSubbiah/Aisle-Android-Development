@@ -37,9 +37,11 @@ class OtpFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.textPhoneNum.setOnClickListener {
+            loginViewModel.stopTimer()
             NavHostFragment.findNavController(this).navigateUp()
         }
         binding.imageEditPhone.setOnClickListener {
+            loginViewModel.stopTimer()
             NavHostFragment.findNavController(this).navigateUp()
         }
 
@@ -48,6 +50,7 @@ class OtpFragment : Fragment() {
                 val success = loginViewModel.checkOtp(binding.editOtp.text.toString())
                 if (success) {
                     SharedPrefHelper.saveToken(requireContext(), loginViewModel.token)
+                    loginViewModel.stopTimer()
                     val intent = Intent(requireActivity(), MainActivity::class.java)
                     startActivity(intent)
                     requireActivity().finish()

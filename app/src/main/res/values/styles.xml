@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="PrimaryButton" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:layout_width">96dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:background">@drawable/bg_button_round_corners</item>
+        <item name="android:backgroundTint">@color/amber</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textFontWeight">700</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="RoundedEditText">
+        <item name="android:background">@drawable/bg_text_round_corners</item>
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textFontWeight">700</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="TitleTextBold">
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:lineHeight">36dp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textFontWeight">800</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+
+    <style name="TitleTextNormal">
+        <item name="android:fontFamily">@font/inter</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textFontWeight">500</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

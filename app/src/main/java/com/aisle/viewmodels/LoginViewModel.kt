@@ -24,6 +24,7 @@ class LoginViewModel : ViewModel() {
 
     private val client = OkHttpClient()
     private val gson = Gson()
+    private var timer: Timer? = null
 
     suspend fun checkPhoneNum(): Boolean {
         val number = countryCode.value + phoneNum.value
@@ -44,7 +45,7 @@ class LoginViewModel : ViewModel() {
     }
 
     private fun startOtpTimeout() {
-        val timer = Timer(false)
+        timer = Timer(false)
         var timeInSeconds = 60
         val timerTask: TimerTask = object : TimerTask() {
             override fun run() {
@@ -57,11 +58,15 @@ class LoginViewModel : ViewModel() {
                 timeInSeconds--
                 if (timeInSeconds < 0) {
                     otpTimeout.postValue("Resend OTP")
-                    timer.cancel()
+                    timer?.cancel()
                 }
             }
         }
-        timer.scheduleAtFixedRate(timerTask, 0, 1000)
+        timer?.scheduleAtFixedRate(timerTask, 0, 1000)
+    }
+
+    fun stopTimer() {
+        timer?.cancel()
     }
 
     private suspend fun fetch(number: String, otp: String?, endPoint: String): JsonObject? {

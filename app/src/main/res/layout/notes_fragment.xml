@@ -151,19 +151,10 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/button_upgrade"
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
-                android:layout_width="96dp"
-                android:layout_height="40dp"
-                android:background="@drawable/bg_button_round_corners"
-                android:backgroundTint="@color/amber"
+                style="@style/PrimaryButton"
                 android:text="@string/upgrade"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:textFontWeight="700"
-                android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="@id/text_premium_description"
                 app:layout_constraintEnd_toEndOf="@id/guideline_right" />
-
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_bottom_left"

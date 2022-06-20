@@ -18,15 +18,12 @@
 
         <TextView
             android:id="@+id/text_phone_num"
+            style="@style/TitleTextNormal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="80dp"
-            android:fontFamily="@font/inter"
             android:text="@{loginViewModel.countryCode + ` ` + loginViewModel.phoneNum}"
-            android:textColor="@color/black"
-            android:textFontWeight="500"
-            android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="+91 123456789" />
@@ -43,53 +40,38 @@
 
         <TextView
             android:id="@+id/text_phone_num_bold"
+            style="@style/TitleTextBold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="10dp"
-            android:fontFamily="@font/inter"
-            android:lineHeight="36dp"
             android:text="@string/enter_the_otp"
-            android:textColor="@color/black"
-            android:textFontWeight="800"
-            android:textSize="30sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_phone_num" />
 
         <EditText
             android:id="@+id/edit_otp"
+            style="@style/RoundedEditText"
             android:layout_width="78dp"
             android:layout_height="36dp"
             android:layout_marginStart="31dp"
             android:layout_marginTop="12dp"
             android:autofillHints="1234"
-            android:background="@drawable/bg_text_round_corners"
-            android:fontFamily="@font/inter"
-            android:gravity="center"
             android:hint="@string/otp_hint"
             android:inputType="number"
-            android:textColor="@color/black"
-            android:textFontWeight="700"
-            android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/text_phone_num_bold"
             tools:text="9999" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button_continue"
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            style="@style/PrimaryButton"
             android:layout_width="96dp"
             android:layout_height="40dp"
             android:layout_marginStart="32dp"
             android:layout_marginTop="18dp"
-            android:background="@drawable/bg_button_round_corners"
-            android:backgroundTint="@color/amber"
             android:text="@string/btn_continue"
-            android:textAllCaps="false"
-            android:textColor="@color/black"
-            android:textFontWeight="700"
-            android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/edit_otp" />
 
