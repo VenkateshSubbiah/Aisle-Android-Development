@@ -12,3 +12,5 @@ Sample login flow in Android for Aisle tech challenge
 ### Screenshots
 <img src="screenshots/screen_1.png" width="300"> <img src="screenshots/screen_2.png" width="300">
 <img src="screenshots/screen_3a.png" width="300"> <img src="screenshots/screen_3b.png" width="300">
+# Result
+Not selected in this round. Got a mail saying that other candidates stood out.
